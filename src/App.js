@@ -51,7 +51,7 @@ class App extends React.Component {
     });
 
     const pacoteFiltrado = pacotesFiltradosMaximo.filter((produto) => {
-      return produto.name.toLowerCase().includes(this.state.filtroBuscaPorNome);
+      return produto.name.toLowerCase().includes(this.state.filtroBuscaPorNome.toLowerCase());
     });
 
     return pacoteFiltrado;
