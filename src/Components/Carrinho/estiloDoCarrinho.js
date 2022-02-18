@@ -5,5 +5,16 @@ export const ConjuntoDoCarrinho = styled.div`
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: aliceblue;
+    background-color: gray;
+    border-radius: 10px;
+    button {
+        border-radius: 5px;
+        background-color: #E0FFFF;
+        font-family: Roboto;
+        font-size: 15px;
+        border: 0px solid;
+        :hover {
+            background-color: #D3D3D3;
+        }
+    }
 `

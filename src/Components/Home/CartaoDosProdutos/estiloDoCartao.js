@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Cartao = styled.div`
-  border: 1px solid black;
+  border: 10px dashed gray;
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
+  background-color: gray;
+  border-radius: 10px;
 `;
 
 export const TextoDoCartao = styled.div`
@@ -20,5 +21,15 @@ export const TextoDoCartao = styled.div`
     align-self: center;
     width: 70%;
     background-color: aliceblue;
+    border-radius: 10px;
+    border: 0px solid;
+    font-family: Roboto;
+    font-size: 15px;
+    :hover {
+      background-color: #FFDB58;
+    }
+    :active {
+      background-color: #8FBC8F;
+    }
   }
 `;

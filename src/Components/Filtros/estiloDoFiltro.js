@@ -5,7 +5,8 @@ export const GrupoDeFiltros = styled.div`
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: aliceblue;
+    background-color: gray;
+    border-radius: 10px;
 `
 
 export const Filtro = styled.label`

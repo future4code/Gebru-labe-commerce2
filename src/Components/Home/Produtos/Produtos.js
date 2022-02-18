@@ -32,7 +32,7 @@ class Produtos extends React.Component {
         <Cabecalho>
           <p>Quantidade de produtos: {this.props.quantidade}</p>
           <label>
-            Ordenação:
+            Preço:
             <select onChange={this.props.onChangeCabecalho}>
               <option value={"Crescente"}>Crescente</option>
               <option value={"Decrescente"}>Decrescente</option>
