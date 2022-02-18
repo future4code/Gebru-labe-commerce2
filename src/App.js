@@ -92,7 +92,19 @@ class App extends React.Component {
       });
     }
     this.adicionarValorTotal(produto.preco);
+
+    // localStorage.setItem('valor', this.state.valorTotal)
+    // localStorage.setItem('carrinho', JSON.stringify(this.state.carrinho))
   };
+
+
+  // componentDidMount = () => {
+  //   const valorTotal = localStorage.getItem('valor');
+  //   const carrinhoCompras = localStorage.getItem('carrinho');
+
+  //   this.setState({valorTotal: valorTotal});
+  //   this.setState({carrinho: JSON.parse(carrinhoCompras)});
+  // }
 
   removerItemDoCarrinho = (itemParaRemover) => {
     if (itemParaRemover.quantidade === 1) {
@@ -133,9 +145,10 @@ class App extends React.Component {
     });
   };
 
+
   render() {
     const produtosFiltrados = this.filtrarProdutos();
-
+    
     return (
       <ConjuntoDeComponentes>
         <Filtros
